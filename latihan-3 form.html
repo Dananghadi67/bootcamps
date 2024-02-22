@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan HTML 3 </title>
+    <style>
+        .container {
+            width: 80%;
+            height: 400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        table {
+            border-spacing: 5px;
+        }
+
+        th,
+        td {
+            padding: 5px;
+            border: 1px;
+        }
+    </style>
+    </style>
+</head>
+
+<body>
+    <div class="container" style="font-family:'Courier New', Courier, monospace;">
+        <nav><a href="latihan-3 list.html"> List</a></nav>
+        <h2> HTML Latihan 3</h2>
+        <div>
+            <form action="latihan-3 list.html" method="get">
+                <div>
+                    <label for="Name">Nama : </label>
+                    <input id="Name" type="name" name="Name" placeholder="Masukkan Nama" />
+                </div>
+                <br>
+                <div>
+                    <label for="Email">Email : </label>
+                    <input id="Email" type="email" name="Email" placeholder="@gmail.com" value="@gmail.com"/>
+                </div>
+                <br>
+                <div>
+                    <label for=" password">Password : </label>
+                    <input id="password" type="password" name="password" placeholder="Masukkan Password" />
+                </div>
+                <br>
+                <div>
+                    <label for="gender">Kelamin</label>
+                    <select name="gender" id="gender">
+                        <option value="male">Laki</option>
+                        <option value="female">Perempuan</option>
+                    </select>
+                </div>
+                <br>
+                <label>Pilih Kesukaan</label>
+                <div class="radio-group">
+                    <input type="radio" id="option1" name="option" value="option1">
+                    <label for="option1">Biliard</label><br>
+                    <input type="radio" id="option2" name="option" value="option2">
+                    <label for="option2">PES</label><br>
+                    <input type="radio" id="option3" name="option" value="option3">
+                    <label for="option3">UNO</label><br>
+                </div>
+                <br>
+                <div>
+                    <button type="submit">Save</button>
+                    <button type="reset">Reset</button>
+                </div>
+            </form>
+        </div>
+        <footer style="font-family:'Courier New', Courier, monospace;">
+            <p>Hak Cipta &copy; 2024. Semua Hak Dilindungi.</p>
+        </footer>
+    </div>
+</body>
+
+</html>
