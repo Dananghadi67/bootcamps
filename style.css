@@ -1,0 +1,147 @@
+body {
+    font-family: "Poppins", sans-serif;
+    padding: 0%;
+    margin: 0;
+    height: 100%;
+}
+
+.navbar {
+    background-color: #6CABDD;
+    color: white;
+    display: flex;
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar>.container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    font-size: 20px;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.menu>li:hover {
+    color: rgb(0, 183, 255);
+    cursor: pointer;
+}
+
+.menu>li:hover:not(.active) {
+    background-color: #1111113f;
+}
+
+.hamburger-icon {
+    display: none;
+}
+
+.banner {
+    background-image: url(https://img.freepik.com/free-vector/engraving-hand-drawn-tropical-leaves-background_23-2148968803.jpg?w=996&t=st=1709513785~exp=1709514385~hmac=dec74d11795964ebf191b6b039ccbe694a7a7aed288e1cef8aef311ec3c97a7e);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 400px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.banner>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-overflow: ellipsis;
+    width: 40%;
+    height: 100px;
+    margin: 0 auto;
+    color: white;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    padding: 50px;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(20% -20px);
+    height: auto;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 55, 255, 0.1);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.card-content {
+    margin-top: 10px;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+
+    .banner>div {
+        font-size: 1em;
+    }
+
+    .hamburger-icon {
+        display: block;
+        background: transparent;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    .hamburger-icon svg path {
+        fill: white;
+    }
+
+    .menu.active {
+        display: block;
+    }
+}
